@@ -24,11 +24,11 @@ backup=()
 options=()
 install=
 changelog=
-source=("~/suckless-calamares")
+#source=("~/suckless-calamares")
 noextract=()
 md5sums=()
 validpgpkeys=()
-pkgdir="~/suckless-calamares/repo/x86_64"
+pkgdir=("~/suckless-calamares/repo/x86_64")
 
 prepare() {
 	cd ~/suckless-calamares
@@ -41,8 +41,8 @@ build() {
 	cd build 
 	make
 	cd ..
-	cp -rv src/branding/suckless/* build/src/branding/suckless/
-	cp -v settings.conf build/settings.conf
+	cp -rv ~/suckless-calamares/src/branding/suckless/* ~/suckless-calamares/build/src/branding/suckless
+	cp -v ~/suckless-calamares/settings.conf ~/suckless-calamares/build/settings.conf
 	
 }
 
