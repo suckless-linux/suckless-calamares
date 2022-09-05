@@ -53,7 +53,7 @@ check() {
 }
 
 package() {
-	cd "~/suckless-calamares"
+	cd ~/suckless-calamares
 	make DESTDIR="$pkgdir/" install
 }
 
