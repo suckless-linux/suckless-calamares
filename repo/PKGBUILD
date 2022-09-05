@@ -1,9 +1,9 @@
-s is an example PKGBUILD file. Use this as a start to creating your own,
+# this is an example PKGBUILD file. Use this as a start to creating your own,
 # and remove these comments. For more information, see 'man PKGBUILD'.
 # NOTE: Please fill out the license field for your package! If it is unknown,
 # then please put 'unknown'.
 
-# Maintainer: Your Name <youremail@domain.com>
+# Maintainer: Lucy Mielke <mielkesteven@icloud.com>
 pkgname=suckless-calamares
 pkgver=1.0.0
 pkgrel=1
@@ -41,7 +41,7 @@ build() {
 	cd build 
 	make
 	cd ..
-	cp -rv ~/suckless-calamares/src/branding/suckless/* ~/suckless-calamares/build/src/branding/suckless
+	cp -rv ~/suckless-calamares/src/branding/suckless/ ~/suckless-calamares/build/src/branding/suckless/
 	cp -v ~/suckless-calamares/settings.conf ~/suckless-calamares/build/settings.conf
 	
 }
